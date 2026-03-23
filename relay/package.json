@@ -1,0 +1,39 @@
+{
+  "name": "hookhq-relay",
+  "version": "0.1.6",
+  "author": "Nuovar <hello@nuovar.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NuovarDev/HookHQ"
+  },
+  "homepage": "https://hookhq.dev",
+  "description": "Lightweight authenticated HTTP relay for HookHQ delivery.",
+  "type": "module",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./handler": "./handler.mjs",
+    "./server": "./server.mjs",
+    "./function": "./function.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "handler.mjs",
+    "server.mjs",
+    "function.mjs",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "hookhq",
+    "relay",
+    "webhooks",
+    "serverless"
+  ]
+}
